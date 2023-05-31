@@ -1,0 +1,37 @@
+name: 2. Simple Workflow
+
+on:
+  push:
+    branches: [main]
+    
+jobs:
+    build:
+      name: Build
+      runs-on: ubuntu-latest
+      
+      steps:
+       - uses: actions/checkout@v3
+       
+       - uses: actions/setup-node@v1
+         with:
+            node-version: '10.x'
+          
+       - name: display path
+         run: echo ${env:PATH}
+         shell: pwsh
+          
+       - name: display path
+         run: echo ${env:PATH}
+         shell: bash
+      
+    container:
+        name: container
+        runs-on: ubuntu-latest
+        container:
+          image: node:14.15.0-alpine3.12
+        steps:
+         - run: |
+            node -v
+            cat /etc/os-release
+            echo Hello Node from container
+       
