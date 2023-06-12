@@ -1,5 +1,5 @@
      
-name: 05-3. Hello World JS
+name: 05-4. Hello World JS
 
 on: 
   [workflow_dispatch]
