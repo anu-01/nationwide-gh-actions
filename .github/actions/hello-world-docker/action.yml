@@ -14,4 +14,4 @@ inputs:
     default: "Mona the Octocat"
 runs:
   using: "docker"
-  image: "DockerFile"
+  image: "Dockerfile"
