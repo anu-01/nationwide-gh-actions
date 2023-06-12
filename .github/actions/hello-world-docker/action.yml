@@ -12,11 +12,6 @@ inputs:
     description: "another person to greet"
     required: true
     default: "Mona the Octocat"
-
-  thirdGreeting:
-    description: "a third greeting"
-    required: false
-
 runs:
   using: "docker"
   image: "DockerFile"
